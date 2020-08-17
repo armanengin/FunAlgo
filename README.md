@@ -24,23 +24,13 @@
 
 
 
-   
-
-
 
 #### Group Members
-- [Fatih Kaplama          
-- [Alperen Alkan     
-- [Arman Engin Sucu   
-- [Remzi Tepe         
-- [Hüseyin Uzun       
-- [Deniz Semih Özal     
+- Arman Engin Sucu 
+- Fatih Kaplama          
+- Alperen Alkan       
+- Remzi Tepe         
+- Hüseyin Uzun       
+- Deniz Semih Özal     
 
-#### What Remains To Be Done
-+ We could not solve the volume button issue and we have received API errors when trying to add methods.
-+ Musics can be applied from    Musics Page, however we cannot mute the music in other pages.
-+ It is not compatible for all phones, we could not solve this issue.
 
-****
-**Instructor:** _(David Davenport)_   **TA:**  _(Laleh Eskandarian)_
-****
