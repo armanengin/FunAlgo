@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/creativeMode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context="com.example.creative.CreativeMode">
+
+
+    <com.example.creative.LineView
+        android:id="@+id/lineView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:background="#FAF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <Button
+        android:id="@+id/settingButton_creative"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/settings"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/volumeButton_creative"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/volumeon"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/settingButton_creative"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/returnButton_creative"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/applyLayout"
+        android:layout_width="83dp"
+        android:layout_height="288dp"
+        android:background="@drawable/layout2_design"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="163dp"
+        android:layout_height="264dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/layout2_design"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819">
+
+        <Button
+            android:id="@+id/clockwise_creative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="@string/goClockwise"
+            android:textColor="#0C0C0C"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/counterClockwise_creative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="@string/goCounterClockwise"
+            android:textColor="#0C0C0C"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/distance_textviewCreative"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/distance_creativeMode"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/distanceSpinner"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/degree_creative"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/degreeSpinner"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/applyCreative"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/button_design"
+            android:text="@string/apply_button"
+            android:textColor="#0C0C0C" />
+
+        <Button
+            android:id="@+id/resetCreative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="@string/reset_button"
+            android:textColor="#0C0C0C" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applyLayout2"
+        android:layout_width="83dp"
+        android:layout_height="288dp"
+        android:background="@drawable/layout2_design"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723"></LinearLayout>
+
+    <Button
+        android:id="@+id/info_creativeMode"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/info"
+        app:layout_constraintEnd_toStartOf="@+id/volumeButton_creative"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lineView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/tortoise_button"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="@drawable/tortoise"
+            android:text="@string/tortoise" />
+
+        <Button
+            android:id="@+id/human_creative"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="@drawable/human"
+            tools:text="@string/human" />
+
+        <Button
+            android:id="@+id/tiger_creative"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/tiger"
+            android:text="@string/tiger" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

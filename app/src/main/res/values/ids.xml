@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bee" type="id" />
+    <item name="honey" type="id" />
+    <item name="turnLeft" type="id" />
+    <item name="settings" type="id" />
+    <item name="volume" type="id" />
+    <item name="back" type="id" />
+</resources>

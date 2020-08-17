@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/achievements_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context="com.example.menu.AchievementsPage">
+
+    <Button
+        android:id="@+id/achievementsPage_back_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/back1"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <Button
+        android:id="@+id/achievementsPage_voice_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/volumeon"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <Button
+        android:id="@+id/button_wipeData"
+
+        android:layout_width="133dp"
+        android:layout_height="28dp"
+
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_design"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Wipe Data"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/graphAchievements_label"
+        app:layout_constraintTop_toBottomOf="@+id/achievementsPage_voice_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="362dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/user"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.softmoore.android.graphlib.GraphView
+        android:id="@+id/graph_view"
+        android:layout_width="727dp"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphAchievements_label"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/graphAchievements_label"
+        android:layout_width="290dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginEnd="221dp"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user" />
+</androidx.constraintlayout.widget.ConstraintLayout>

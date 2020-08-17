@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="@string/congratulations" />
+
+
+    <LinearLayout
+        android:layout_width="218dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star"
+            android:contentDescription="@string/star1" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star"
+            android:contentDescription="@string/star2" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star"
+            android:contentDescription="@string/star3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/menubtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:textColor="#121111"
+            android:background="@drawable/button_design"
+            android:text="@string/menu" />
+
+        <Button
+            android:id="@+id/retrybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#121111"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_design"
+            android:text="@string/retry" />
+
+        <Button
+            android:id="@+id/continuebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#121111"
+            android:background="@drawable/button_design"
+            android:text="@string/continuebtn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.FunAlgo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name="com.example.educational.Level9Page"></activity>
+        <activity android:name="com.example.menu.InstructionsPage" />
+        <activity android:name="com.example.creative.CreativeMode" />
+        <activity android:name="com.example.menu.FirstPage" />
+        <activity android:name="com.example.educational.Level8Page" />
+        <activity android:name="com.example.educational.Level7Page" />
+        <activity android:name="com.example.educational.Level6Page" />
+        <activity android:name="com.example.educational.Level5Page" />
+        <activity android:name="com.example.educational.Level1Page" />
+        <activity android:name="com.example.educational.Level3Page" />
+        <activity android:name="com.example.educational.Level2Page" />
+        <activity android:name="com.example.educational.LevelPage" />
+        <activity android:name="com.example.educational.Level4Page" />
+        <activity android:name="com.example.menu.PlayPage" />
+        <activity android:name="com.example.menu.MusicsPage" />
+        <activity android:name="com.example.menu.SettingsPage" />
+        <activity android:name="com.example.menu.ThemePage" />
+        <activity android:name="com.example.menu.HomePage" />
+        <activity android:name="com.example.menu.AchievementsPage" />
+        <activity android:name="com.example.menu.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
